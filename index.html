@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Under construction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+    .global-easing {
+        // ease-in-out
+        /*    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;*/
+        // easeOutBack
+        /* -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition:         all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
+        // easeInOutExpo
+        /* -webkit-transition: all 600ms cubic-bezier(1, 0, 0, 1);
+    transition: all 600ms cubic-bezier(1, 0, 0, 1);*/
+    }
+
+    body {
+        background: #fafafa;
+        font-family: 'Open Sans', sans-serif;
+        color: #484848;
+        font-weight: normal;
+        font-size: 100%;
+    }
+
+    a,
+    a:hover {
+        color: #484848;
+        text-decoration: none;
+    }
+
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        /*width: 100%;*/
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /*
+
+
+
+    .background {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.2;
+        background-image: url(img/bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: 0;
+    }*/
+
+
+    .flex-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        padding: 0;
+        margin: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        width: 100%;
+    }
+
+
+
+    .row {
+        width: auto;
+    }
+
+    .flex-item {
+        padding: 6px;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        margin: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+
+    .flex-item.social a svg {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .flex-item.logo {
+        margin-bottom: 80px;
+    }
+
+    .flex-item.logo img {
+        max-width: 600px;
+    }
+
+    .flex-item.social a {
+        margin: 0px 10px;
+    }
+
+    .flex-item a.button.small {
+        font-size: 12px;
+        display: block;
+        padding: 10px;
+    }
+
+
+
+    ==============================EM+MOBILE FIRST============================== // Small screens
+
+    @media only screen {
+        p {
+            font-size: 140px;
+        }
+    }
+
+    /* Define mobile styles */
+
+    @media only screen and (max-width: 40em) {
+        p {
+            font-size: 20px;
+        }
+         .flex-item.logo img {
+        max-width: 100%;
+    }
+    }
+
+    /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+    // Medium screens
+    @media only screen and (min-width: 40.063em) {}
+
+    /* min-width 641px, medium screens */
+
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {}
+
+    /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+    // Large screens
+    @media only screen and (min-width: 64.063em) {}
+
+    /* min-width 1025px, large screens */
+
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+
+    /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+    // XLarge screens
+    @media only screen and (min-width: 90.063em) {}
+
+    /* min-width 1441px, xlarge screens */
+
+    @media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+
+    /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+    // XXLarge screens
+    @media only screen and (min-width: 120.063em) {}
+
+    /* min-width 1921px, xxlarge screens */
+
+    /* Touch Detection */
+    .touch .your-class {
+        ...
+    }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="row">
+            <div class="flex-item logo"><img src="img/logo.jpg" alt="logo"></div>
+            <div class="flex-item">
+                <p>Under Construction</p>
+            </div>
+            <!-- <div class="flex-item"><a href="tel:+34">+34 93 123 456</a></div> -->
+            <!-- <div class="flex-item"><a href="mailto:hola@xxxx">hola@xxxxx.es</a></div> -->
+        </div>
+    </div>
+    <!-- <div class="background "></div> -->
+</body>
+
+</html>
